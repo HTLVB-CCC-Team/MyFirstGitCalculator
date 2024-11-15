@@ -6,6 +6,7 @@ Console.WriteLine("MyFirstGitCalculator!");
 float operand1;
 float operand2;
 string @operator;
+Console.ForegroundColor = ConsoleColor.Yellow;
 
 operand1 = InputHelper.ReadNumber("Operand1: ");
 @operator = InputHelper.ReadString("Operator: ");
