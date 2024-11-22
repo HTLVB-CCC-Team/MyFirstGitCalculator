@@ -9,6 +9,26 @@ internal class CalculationWorker
 {
     internal static float Calculate(float operand1, float operand2, string @operator)
     {
-        throw new NotImplementedException();
+		float result = 0;
+
+		try
+		{
+            if (@operator == "+")
+                result = operand1 + operand2;
+            else if (@operator == "-")
+                result = operand1 - operand2;
+            else if (@operator == "*")
+                result = operand1 * operand2;
+            else if (@operator == "%")
+                result = operand1 % operand2;
+            else if (@operator == "/")
+                result = operand1 / operand2;
+        }
+		catch (Exception ex)
+		{
+            Console.WriteLine(ex.Message);
+		}
+
+        return result;
     }
 }
