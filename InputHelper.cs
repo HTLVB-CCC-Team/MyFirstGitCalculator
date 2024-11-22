@@ -10,7 +10,7 @@ internal class InputHelper
             Console.Write(prompt);
             input = Console.ReadLine();
 
-        } while (float.TryParse(input, out number));
+        } while (!float.TryParse(input, out number));
 
         return number;
     }
