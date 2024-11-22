@@ -23,6 +23,7 @@ internal class InputHelper
         {
             Console.Write(prompt);
             input = Console.ReadKey().KeyChar;
+            Console.WriteLine();
         } while (!operators.Contains(input));
         
 
