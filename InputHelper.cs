@@ -15,12 +15,18 @@ internal class InputHelper
         return number;
     }
 
-    internal static string ReadString(string prompt)
+    internal static string ReadOperator(string prompt)
     {
-        string input = "";
-        Console.Write(prompt);
-        input = Console.ReadLine();
+        char[] operators = { '+', '-', '*', '/', '%' };
+        char input;
+        do
+        {
+            Console.Write(prompt);
+            input = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+        } while (!operators.Contains(input));
+        
 
-        return input;
+        return input.ToString();
     }
 }
