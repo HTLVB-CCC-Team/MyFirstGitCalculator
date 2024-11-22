@@ -15,7 +15,7 @@ internal class InputHelper
         return number;
     }
 
-    internal static char ReadOperator(string prompt)
+    internal static string ReadOperator(string prompt)
     {
         char[] operators = { '+', '-', '*', '/', '%' };
         char input;
@@ -26,6 +26,6 @@ internal class InputHelper
         } while (!operators.Contains(input));
         
 
-        return input;
+        return input.ToString();
     }
 }
