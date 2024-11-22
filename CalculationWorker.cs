@@ -22,8 +22,17 @@ internal class CalculationWorker
             else if (@operator == "%")
                 result = operand1 % operand2;
             else if (@operator == "/")
-                result = operand1 / operand2;
+            {
+                if (operand2 != 0)
+                    return operand1 / operand2;
+                else
+                    throw new DivideByZeroException("Cannot divide by zero!");
+            }
+        else
+        {
+            throw new ArgumentException("Invalid operator");
         }
+    }
 		catch (Exception ex)
 		{
             Console.WriteLine(ex.Message);
