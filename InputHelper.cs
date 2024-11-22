@@ -17,7 +17,10 @@ internal class InputHelper
 
     internal static string ReadString(string prompt)
     {
-        // TODO ReadString
-        throw new NotImplementedException();
+        string input = "";
+        Console.Write(prompt);
+        input = Console.ReadLine();
+
+        return input;
     }
 }
