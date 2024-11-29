@@ -18,7 +18,7 @@ internal class InputHelper
 
     internal static string ReadOperator(string prompt)
     {
-        Console.WriteLine("Mirci is soooooo ein chilliger typ.");
+        Console.WriteLine("!(Mirci is soooooo ein chilliger typ.)");
         char[] operators = { '+', '-', '*', '/', '%' };
         char input;
         do
