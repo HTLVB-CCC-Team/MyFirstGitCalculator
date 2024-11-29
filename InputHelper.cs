@@ -3,6 +3,7 @@ internal class InputHelper
 {
     internal static float ReadNumber(string prompt)
     {
+        
         string input = "";
         float number;
         do
@@ -17,6 +18,7 @@ internal class InputHelper
 
     internal static string ReadOperator(string prompt)
     {
+        Console.WriteLine("Mirci is soooooo ein chilliger typ.");
         char[] operators = { '+', '-', '*', '/', '%' };
         char input;
         do
